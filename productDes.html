@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1200" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>More on Product | XYZ Technology</title>
+    <meta name="keywords" content=" " />
+    <meta name="description" content=" " />
+    <link rel="shortcut icon" href="images/favorite.png" type="image/png" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/aos.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.js"></script>
+    <script type="text/javascript" src="js/Lunbo.js"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+  </head>
+  <body>
+    <div class="head">
+      <div class="w1200 clearfix">
+        <div class="fl">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="product.html">Product</a></li>
+            <li><a href="introduction.html">How to Use</a></li>
+          </ul>
+        </div>
+        <div class="logo fl">
+          <a href="index.html">
+            <img src="images/logo.png" />
+          </a>
+        </div>
+        <div class="fr">
+          <ul>
+            <li><a href="team.html">Partner with Us</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="mailto:info@suloxyz.com">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="m-head clearfix">
+      <div class="logo fl">
+        <a href="index.html">
+          <img src="images/logo.png" />
+        </a>
+      </div>
+      <div class="nav">
+        <span class="menu" id="box">
+          <img src="images/menu.png" />
+        </span>
+      </div>
+      <ul id="down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="introduction.html">How to Use</a></li>
+        <li><a href="team.html">Partner with Us</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="mailto:info@suloxyz.com">Contact Us</a></li>
+      </ul>
+      <script>
+        var obox = document.getElementById("box"); //获取id=box容器
+        var odown = document.getElementById("down"); //获取id=down容器
+        var timer; //定义timer
+        var i; //定义i
+        //当点击obox时，呈现出下拉列表的内容，给个延时效果
+        obox.onclick = function () {
+          if (i == 1) {
+            i = 0;
+            clearInterval(timer); //清除定时器timer
+
+            obox.className = " menu";
+
+            timer = setInterval(function () {
+              //定义定时器timer
+              odown.style.display = "none"; //定义id=down容器隐藏
+            }, 100);
+          } else {
+            i = 1;
+            clearInterval(timer); //清除定时器timer
+            obox.className = " menu snow-container";
+
+            timer = setInterval(function () {
+              //定义定时器timer
+              odown.style.display = "block"; //定义id=down容器显示
+            }, 100);
+          }
+        };
+      </script>
+    </div>
+    <div class="banner">
+      <img src="images/pbanner.jpg" />
+    </div>
+    <div class="features">
+      <div class="w1200 clearfix">
+        <div class="title">
+          <span>Features</span>
+        </div>
+        <div class="flist">
+          <ul class="clearfix">
+            <li>
+              <div class="img">
+                <img src="images/Chargers.png" />
+              </div>
+              <div class="text">
+                <p>Portable Charger</p>
+                <p style="font-size: 90%">Device Capability</p>
+                <p style="font-size: 90%">Lightning, Mirco USB, USB-C</p>
+              </div>
+            </li>
+            <li>
+              <div class="img">
+                <img src="images/Power%20Station_edited_edited.png" />
+              </div>
+              <div class="text">
+                <p>Power Station</p>
+                <p style="font-size: 90%">8 portable charger slots</p>
+                <p style="font-size: 90%">
+                  Size: 10.2in (L) * 7.0in （W) * 8.6in (H)
+                </p>
+                <p style="font-size: 90%">Weight: 9.9lbs Power: 60W</p>
+                <p style="font-size: 90%">Built-in Advertising System 10.1HD</p>
+                <p style="font-size: 90%">
+                  LED Screen with customizable voice support feature.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="img">
+                <a href="#">
+                  <img src="images/SuLo%20App.png" />
+                </a>
+              </div>
+              <div class="text">
+                <p>The SuLo XYZ APP</p>
+                <p style="font-size: 90%">
+                  Our app is available at IOS and Android APP Stores
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- foot -->
+    <div class="foot">
+      <div class="w1200 clearfix">
+        <div class="flogo">
+          <img src="images/flogo.png" />
+          <p>
+            <span class="fa fa-envelope-o" aria-hidden="true"></span
+            >info@suloxyz.com
+          </p>
+          <p>
+            <span class="fa fa-instagram" aria-hidden="true"></span>@sul.xyz
+          </p>
+        </div>
+        <div class="flink clearfix">
+          <dl>
+            <dt>About Us</dt>
+            <dd>
+              <a
+                href="https://app.termly.io/document/privacy-policy/3e9851f8-5f7e-45d0-a970-53a8e048fa2b"
+              >
+                Terms & Conditions</a
+              >
+            </dd>
+          </dl>
+          <dl>
+            <dt>FAQs</dt>
+            <dd>
+              <a
+                href="https://app.termly.io/document/terms-of-use-for-website/edad431d-d6d7-4b7d-a5f2-400e9c788de4"
+              >
+                Privacy Policy</a
+              >
+            </dd>
+          </dl>
+        </div>
+        <div class="fapp">
+          <h3>Download Our App!</h3>
+          <div class="icon">
+            <a href="#">
+              <img src="images/apple%20icon.png" /> </a
+            ><a href="#">
+              <img src="images/google%20icon.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      //banner
+      //jQuery(".slideBox").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true});
+
+      //产品
+      LbMove(
+        "BoxUl",
+        "btnl",
+        "btnr",
+        "BoxSwitch",
+        true,
+        "left",
+        true,
+        410,
+        1000,
+        3000,
+        3
+      );
+      //荣誉
+      //LbMove('honor_ul','btnls','btnrs','BoxSwitch',true,'left',true,203,1000,3000,6);
+      //关于我们
+      //jQuery(".slideTxtBox").slide();
+
+      AOS.init({
+        offset: 200,
+        duration: 600,
+        easing: "ease-in-sine",
+        delay: 100,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,511 @@
+﻿<!DOCTYPE html >
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Home | XYZ Technology</title>
+    <meta name="keywords" content=" " />
+    <meta name="description" content=" " />
+    <link rel="shortcut icon" href="images/favorite.png" type="image/png">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/aos.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.js"></script>
+    <script type="text/javascript" src="js/Lunbo.js"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+</head>
+<body>
+    <div class="head">
+        <div class="w1200 clearfix">
+            <div class="fl">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="introduction.html">How to Use</a></li>
+                </ul>
+            </div>
+            <div class="logo fl">
+                <a href="index.html">
+                    <img src="images/logo.png" />
+                </a>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li><a href="team.html">Partner with Us</a></li>
+                    <li class="active"><a href="help.html">Help</a></li>
+                    <li><a href="mailto:info@suloxyz.com">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="m-head clearfix">
+        <div class="logo fl">
+            <a href="index.html">
+                <img src="images/logo.png" />
+            </a>
+        </div>
+        <div class="nav">
+            <span class=" menu" id="box">
+                <img src="images/menu.png" />
+            </span>
+        </div>
+        <ul id="down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="introduction.html">How to Use</a></li>
+            <li><a href="team.html">Partner with Us</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="mailto:info@suloxyz.com">Contact Us</a></li>
+        </ul>
+        <script>
+
+            var obox = document.getElementById("box"); //获取id=box容器
+            var odown = document.getElementById("down"); //获取id=down容器
+            var timer; //定义timer
+            var i; //定义i
+            //当点击obox时，呈现出下拉列表的内容，给个延时效果
+            obox.onclick = function () {
+                if (i == 1) {
+                    i = 0;
+                    clearInterval(timer); //清除定时器timer
+
+                    obox.className = ' menu';
+
+                    timer = setInterval(function () {//定义定时器timer
+                        odown.style.display = "none"; //定义id=down容器隐藏
+                    }, 100)
+                }
+                else {
+                    i = 1;
+                    clearInterval(timer); //清除定时器timer
+                    obox.className = ' menu snow-container';
+
+                    timer = setInterval(function () {//定义定时器timer
+                        odown.style.display = "block"; //定义id=down容器显示
+                    }, 100)
+                }
+            }
+        </script>
+    </div>
+    <div class="banner">
+        <img src="images/hbanner.jpg" style="width: 100%; height: 800px; opacity: 0.5;" />
+        <h3 style="color: #04bee3; text-shadow: 0px 0px 5px white;">
+            Help Center</h3>
+    </div>
+    <div class="help">
+        <div class="slideTxtBox">
+            <div class="w1200 clearfix">
+                <div class="hd">
+                    <span class="arrow"><a class="next"></a><a class="prev"></a></span>
+                    <ul>
+                        <li><span class="fa fa-question-circle" aria-hidden="true"></span>
+                            <p>
+                                Frequently Asked Questions</p>
+                        </li>
+                        <li><span class="fa fa-file-text" aria-hidden="true"></span>
+                            <p>
+                                Frequently Asked About How to Rent and Product</p>
+                        </li>
+                        <li><span class="fa fa-calendar" aria-hidden="true"></span>
+                            <p>
+                                Frequently Asked About Charge</p>
+                        </li>
+                </div>
+            </div>
+            <div class="bd">
+                <ul>
+                    <div class="sideMenu" style="margin: 0 auto">
+                        <h3>
+                            <em></em>1. How Long Can I Rent A Portable Charger?
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    The rental timer begins 5 minutes after a portable charger is rented. A rental period
+                                    that is less than 60 minutes will be rounded up as an hour. ​</p>
+                            </li>
+                        </ul>
+                        <h3>
+                            <em></em>2. What Is The Consequence Of Not Returning The Portable Charger?
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    Failure to return the portable charger on time will result in a purchasing fee of
+                                    $36 (plus tax). You may keep it or return the unit to SuLo XYZ Power Station. ​</p>
+                                <p>
+                                    If this happens, the maximum rental fee of every 24 hour is accumulated until the
+                                    total of $36 plus tax will be charged from your payment method. A portable charger
+                                    can be rented for up to 72 hours at $36. ​</p>
+                                <p>
+                                    After 3 days, your rental duration will expire, and your portable charger will be
+                                    considered as purchased. The portable charger can be continued to be charged with
+                                    a standard Micro USB cable plugged into a wall outlet or computer. ​</p>
+                            </li>
+                        </ul>
+                        <h3>
+                            <em></em>3. Why Is There A $1.50 Charge To Activate My Account?</h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    Failure to return the portable charger on time will result in a purchasing fee of
+                                    $36 (plus tax). You may keep it or return the unit to SuLo XYZ Power Station. ​</p>
+                                <p>
+                                    If this happens, the maximum rental fee of every 24 hour is accumulated until the
+                                    total of $36 plus tax will be charged from your payment method. A portable charger
+                                    can be rented for up to 72 hours at $36. ​</p>
+                                <p>
+                                    After 3 days, your rental duration will expire, and your portable charger will be
+                                    considered as purchased. The portable charger can be continued to be charged with
+                                    a standard Micro USB cable plugged into a wall outlet or computer. ​</p>
+                            </li>
+                        </ul>
+                        <h3>
+                            <em></em>4. Will There Be A Hold Placed On My Card?</h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    Failure to return the portable charger on time will result in a purchasing fee of
+                                    $36 (plus tax). You may keep it or return the unit to SuLo XYZ Power Station. ​</p>
+                                <p>
+                                    If this happens, the maximum rental fee of every 24 hour is accumulated until the
+                                    total of $36 plus tax will be charged from your payment method. A portable charger
+                                    can be rented for up to 72 hours at $36. ​</p>
+                                <p>
+                                    After 3 days, your rental duration will expire, and your portable charger will be
+                                    considered as purchased. The portable charger can be continued to be charged with
+                                    a standard Micro USB cable plugged into a wall outlet or computer. ​</p>
+                            </li>
+                        </ul>
+                        <h3>
+                            <em></em>5. Where Should I Return My Portable Charger?
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    Failure to return the portable charger on time will result in a purchasing fee of
+                                    $36 (plus tax). You may keep it or return the unit to SuLo XYZ Power Station. ​</p>
+                                <p>
+                                    If this happens, the maximum rental fee of every 24 hour is accumulated until the
+                                    total of $36 plus tax will be charged from your payment method. A portable charger
+                                    can be rented for up to 72 hours at $36. ​</p>
+                                <p>
+                                    After 3 days, your rental duration will expire, and your portable charger will be
+                                    considered as purchased. The portable charger can be continued to be charged with
+                                    a standard Micro USB cable plugged into a wall outlet or computer. ​</p>
+                            </li>
+                        </ul>
+                        <h3>
+                            <em></em>6. Where Are the Payment Methods Accepted by SuLo XYZ?
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    SuLo XYZ APP accepts Visa, Discover, Mastercard, and Apple Pay ​</p>
+                            </li>
+                        </ul>
+                        <h3>
+                            <em></em>7. Are Portable Chargers Safe?
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    SuLo XYZ portable charger is a secure system that allows only for electricity flow,
+                                    not data transmission. Our charger never collect personal data. XYZ represents and
+                                    warrants that no personal data and/or personally identifiable information of any
+                                    end- user is gathered through use of the licensed property, and SuLo XYZ partners
+                                    will not collect any personal data in connection with use of SuLo XYZ services.
+                                    ​</p>
+                            </li>
+                        </ul>
+                        <h3>
+                            <em></em>8. May I Rent Multiple Portable Chargers?
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    An account can only rent one portable charger at a time. ​</p>
+                            </li>
+                        </ul>
+                        <h3>
+                            <em></em>9. How Do I Confirm The Portable Charger Has Been Returned?
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    Please insert the cable back into the portable charger before returning the charger,
+                                    then place the portable charger back in the station with the "SuLo XYZ" logo upward.
+                                    The Power Station will ring if the return is successful. You may also check your
+                                    rental status on the “Rental History” page on the app. The return is successful
+                                    only when the status shows "Completed ​</p>
+                            </li>
+                        </ul>
+                        <h3>
+                            <em></em>10. What If You Scanned And Paid, But Are Unable To Charge Your Device
+                            When The Cable Is Properly Plugged in?
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    When this happens, you will have 5 minutes to put it back on the station. ​</p>
+                            </li>
+                        </ul>
+                        <h3>
+                            <em></em>11. Is There Any Reminder For The Amount Of Time I Have Used?
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    Yes! We will send you a notification every 24 hours until the charger is returned
+                                    or the max usage time of 72 hours is reached. ​</p>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+                <ul>
+                    <div class="sideMenu" style="margin: 0 auto">
+                        <h3>
+                            <em></em>1. How Long Can I Rent A Portable Charger?
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    The rental timer begins 5 minutes after a portable charger is rented. A rental period
+                                    that is less than 60 minutes will be rounded up as an hour. ​</p>
+                            </li>
+                        </ul>
+                        <h3>
+                            <em></em>2. What Is The Consequence Of Not Returning The Portable Charger?
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    Failure to return the portable charger on time will result in a purchasing fee of
+                                    $36 (plus tax). You may keep it or return the unit to SuLo XYZ Power Station. ​</p>
+                                <p>
+                                    If this happens, the maximum rental fee of every 24 hour is accumulated until the
+                                    total of $36 plus tax will be charged from your payment method. A portable charger
+                                    can be rented for up to 72 hours at $36. ​</p>
+                                <p>
+                                    After 3 days, your rental duration will expire, and your portable charger will be
+                                    considered as purchased. The portable charger can be continued to be charged with
+                                    a standard Micro USB cable plugged into a wall outlet or computer. ​</p>
+                            </li>
+                        </ul>
+                        <h3>
+                            <em></em>3. Where Should I Return My Portable Charger?
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    Failure to return the portable charger on time will result in a purchasing fee of
+                                    $36 (plus tax). You may keep it or return the unit to SuLo XYZ Power Station. ​</p>
+                                <p>
+                                    If this happens, the maximum rental fee of every 24 hour is accumulated until the
+                                    total of $36 plus tax will be charged from your payment method. A portable charger
+                                    can be rented for up to 72 hours at $36. ​</p>
+                                <p>
+                                    After 3 days, your rental duration will expire, and your portable charger will be
+                                    considered as purchased. The portable charger can be continued to be charged with
+                                    a standard Micro USB cable plugged into a wall outlet or computer. ​</p>
+                            </li>
+                        </ul>
+                        <h3>
+                            <em></em>4. Are Portable Chargers Safe?
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    SuLo XYZ portable charger is a secure system that allows only for electricity flow,
+                                    not data transmission. Our charger never collect personal data. XYZ represents and
+                                    warrants that no personal data and/or personally identifiable information of any
+                                    end- user is gathered through use of the licensed property, and SuLo XYZ partners
+                                    will not collect any personal data in connection with use of SuLo XYZ services.
+                                    ​</p>
+                            </li>
+                        </ul>
+                        <h3>
+                            <em></em>5. May I Rent Multiple Portable Chargers?
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    An account can only rent one portable charger at a time. ​</p>
+                            </li>
+                        </ul>
+                        <h3>
+                            <em></em>6. How Do I Confirm The Portable Charger Has Been Returned?
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    Please insert the cable back into the portable charger before returning the charger,
+                                    then place the portable charger back in the station with the "SuLo XYZ" logo upward.
+                                    The Power Station will ring if the return is successful. You may also check your
+                                    rental status on the “Rental History” page on the app. The return is successful
+                                    only when the status shows "Completed ​</p>
+                            </li>
+                        </ul>
+                        <h3>
+                            <em></em>7. Is There Any Reminder For The Amount Of Time I Have Used?
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    Yes! We will send you a notification every 24 hours until the charger is returned
+                                    or the max usage time of 72 hours is reached. ​</p>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+                <ul>
+                    <div class="sideMenu" style="margin: 0 auto">
+                        <h3>
+                            <em></em>1. Why Is There A $1.50 Charge To Activate My Account?</h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    Failure to return the portable charger on time will result in a purchasing fee of
+                                    $36 (plus tax). You may keep it or return the unit to SuLo XYZ Power Station. ​</p>
+                                <p>
+                                    If this happens, the maximum rental fee of every 24 hour is accumulated until the
+                                    total of $36 plus tax will be charged from your payment method. A portable charger
+                                    can be rented for up to 72 hours at $36. ​</p>
+                                <p>
+                                    After 3 days, your rental duration will expire, and your portable charger will be
+                                    considered as purchased. The portable charger can be continued to be charged with
+                                    a standard Micro USB cable plugged into a wall outlet or computer. ​</p>
+                            </li>
+                        </ul>
+                        <h3>
+                            <em></em>2. Will There Be A Hold Placed On My Card?</h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    Failure to return the portable charger on time will result in a purchasing fee of
+                                    $36 (plus tax). You may keep it or return the unit to SuLo XYZ Power Station. ​</p>
+                                <p>
+                                    If this happens, the maximum rental fee of every 24 hour is accumulated until the
+                                    total of $36 plus tax will be charged from your payment method. A portable charger
+                                    can be rented for up to 72 hours at $36. ​</p>
+                                <p>
+                                    After 3 days, your rental duration will expire, and your portable charger will be
+                                    considered as purchased. The portable charger can be continued to be charged with
+                                    a standard Micro USB cable plugged into a wall outlet or computer. ​</p>
+                            </li>
+                        </ul>
+                        <h3>
+                            <em></em>3. Why Is There A $1.50 Charge To Activate My Account?</h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    Failure to return the portable charger on time will result in a purchasing fee of
+                                    $36 (plus tax). You may keep it or return the unit to SuLo XYZ Power Station. ​</p>
+                                <p>
+                                    If this happens, the maximum rental fee of every 24 hour is accumulated until the
+                                    total of $36 plus tax will be charged from your payment method. A portable charger
+                                    can be rented for up to 72 hours at $36. ​</p>
+                                <p>
+                                    After 3 days, your rental duration will expire, and your portable charger will be
+                                    considered as purchased. The portable charger can be continued to be charged with
+                                    a standard Micro USB cable plugged into a wall outlet or computer. ​</p>
+                            </li>
+                        </ul>
+                        <h3>
+                            <em></em>4. What If You Scanned And Paid, But Are Unable To Charge Your Device When
+                            The Cable Is Properly Plugged in?
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    When this happens, you will have 5 minutes to put it back on the station. ​</p>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <!-- sideMenu End -->
+        <script type="text/javascript">
+            jQuery(".sideMenu").slide({
+                titCell: "h3", //鼠标触发对象
+                targetCell: "ul", //与titCell一一对应，第n个titCell控制第n个targetCell的显示隐藏
+                effect: "slideDown", //targetCell下拉效果
+                delayTime: 300, //效果时间
+                triggerTime: 150, //鼠标延迟触发时间（默认150）
+                defaultPlay: true, //默认是否执行效果（默认true）
+                returnDefault: true //鼠标从.sideMen移走后返回默认状态（默认false）
+            });
+
+            jQuery(".slideTxtBox").slide({ trigger: "click", pnLoop: false });
+        </script>
+    </div>
+    <div class="foot">
+        <div class="w1200 clearfix">
+            <div class="flogo">
+                <img src="images/flogo.png" />
+                <p>
+                    <span class="fa fa-envelope-o" aria-hidden="true"></span>info@suloxyz.com
+                </p>
+                <p>
+                    <span class="fa fa-instagram" aria-hidden="true"></span>@sul.xyz
+                </p>
+            </div>
+            <div class="flink clearfix">
+                <dl>
+                    <dt>About Us</dt>
+                    <dd>
+                        <a href="https://app.termly.io/document/privacy-policy/3e9851f8-5f7e-45d0-a970-53a8e048fa2b">
+                            Terms & Conditions</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>FAQs</dt>
+                    <dd>
+                        <a href="https://app.termly.io/document/terms-of-use-for-website/edad431d-d6d7-4b7d-a5f2-400e9c788de4">
+                            Privacy Policy</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="fapp">
+                <h3>
+                    Download Our App!</h3>
+                <div class="icon">
+                    <a href="https://apps.apple.com/us/app/sulo/id1525163949">
+                        <img src="images/apple%20icon.png" />
+                    </a><a href="https://play.google.com/store/apps/details?id=com.github.sulo&hl=en_US&gl=US">
+                        <img src="images/google%20icon.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //banner
+		//jQuery(".slideBox").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true});
+		
+		//产品
+		LbMove('BoxUl','btnl','btnr','BoxSwitch',true,'left',true,410,1000,3000,3);
+		//荣誉
+		//LbMove('honor_ul','btnls','btnrs','BoxSwitch',true,'left',true,203,1000,3000,6);
+		//关于我们
+		//jQuery(".slideTxtBox").slide();
+
+
+		
+
+
+	AOS.init({
+	  offset: 200,
+	  duration: 600,
+	  easing: 'ease-in-sine',
+	  delay: 100,
+	});
+		
+		
+    </script>
+</body>
+</html>
